@@ -1,0 +1,32 @@
+.Films{
+  margin-top: 100px;
+  &-title {
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  &-items {
+    display: flex;
+    gap: 15px;
+    height: 250px;
+    width: 107%;
+    justify-content:space-between;
+    overflow-x: scroll;
+    padding: 10px 0;
+    &::-webkit-scrollbar {
+      display: inline-block;
+      cursor: ew-resize;
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #f8f7f771;
+      border-radius: 12px;
+    }
+    img {
+      cursor: pointer;
+      &:hover {
+        scale: 1.08;
+      }
+    }
+  }
+}
